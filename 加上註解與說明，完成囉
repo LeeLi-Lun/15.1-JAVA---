@@ -3,14 +3,14 @@
  * Name : Alan Lee
  * Ex: 15.1
  * Information: By enter an number, user can get the answer of the functions of 15.1
- *				The functions of 15.1:
- *		 				a. f(x) = x * x 
- *						b. f(x) = sin(x)
- *		 				c. f(x) = cos(x) 
- *		 				d. f(x) = tan(x)
- *						e. f(x) = cos(x) + 5sin(x) 
- *						f. f(x) = 5cos(x) + sin(x) 
- *						g. f(x) = log(x) + x * x 
+ *		The functions of 15.1:
+ *		 		a. f(x) = x * x 
+ *				b. f(x) = sin(x)
+ *		 		c. f(x) = cos(x) 
+ *		 		d. f(x) = tan(x)
+ *				e. f(x) = cos(x) + 5sin(x) 
+ *				f. f(x) = 5cos(x) + sin(x) 
+ *				g. f(x) = log(x) + x * x 
  *		
 */
 
