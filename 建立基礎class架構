@@ -1,0 +1,37 @@
+import java.swing.jPanel;
+
+public class FunctionAnswer{
+
+}
+
+abstract class AbstractDrawFunction extends jPanel{
+
+}
+
+class Function_a extends AbstractDrawFunction{
+
+}
+
+class Function_b extends AbstractDrawFunction{
+
+}
+
+class Function_c extends AbstractDrawFunction{
+
+}
+
+class Function_d extends AbstractDrawFunction{
+
+}
+
+class Function_e extends AbstractDrawFunction{
+
+}
+
+class Function_f extends AbstractDrawFunction{
+
+}
+
+class Function_g extends AbstractDrawFunction{
+
+}
