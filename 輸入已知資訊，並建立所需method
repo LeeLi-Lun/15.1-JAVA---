@@ -1,0 +1,88 @@
+import java.util.*;
+import java.swing.jPanel;
+
+public class FunctionAnswer{
+	public static void main(String[] args){
+	
+	}
+}
+
+abstract class AbstractDrawFunction extends jPanel{
+	/** Polygon to hold the points*/
+	private Polygon p = new Polygon();
+	
+	protected AbstrctDrawFuncrion(){
+		drawFunction();
+	}
+	
+	/** Return the y-coordinate*/
+	abstract double f(double x);
+	
+	/** Obtain points for x-coordinates 100,101, ... , 300*/
+	public void drawFunction(){
+		for(int x = -100; x <= 100; x++){
+			p.addPoint( x + 200, 200 - (int)f(x));
+		}
+	}
+	
+	@Override /** Draw axes, labels, and connect points*/
+	protected void paintComponent(Graphics g){
+		
+	}
+}
+
+class Function_a extends AbstractDrawFunction{
+	private double answer_a = 0;
+	
+	double f(double x){
+	
+	}
+}
+
+class Function_b extends AbstractDrawFunction{
+	private double answer_b = 0;
+	
+	double f(double x){
+	
+	}
+}
+
+class Function_c extends AbstractDrawFunction{
+	private double answer_c = 0;
+	
+	double f(double x){
+	
+	}
+}
+
+class Function_d extends AbstractDrawFunction{
+	private double answer_d = 0;
+	
+	double f(double x){
+	
+	}
+}
+
+class Function_e extends AbstractDrawFunction{
+	private double answer_e = 0;
+	
+	double f(double x){
+	
+	}
+}
+
+class Function_f extends AbstractDrawFunction{
+	private double answer_f = 0;
+	
+	double f(double x){
+	
+	}
+}
+
+class Function_g extends AbstractDrawFunction{
+	private double answer_g = 0;
+	
+	double f(double x){
+	
+	}
+}
