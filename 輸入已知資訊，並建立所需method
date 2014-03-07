@@ -1,6 +1,3 @@
-import java.util.*;
-import java.swing.jPanel;
-
 public class FunctionAnswer{
 	public static void main(String[] args){
 	
@@ -35,6 +32,14 @@ class Function_a extends AbstractDrawFunction{
 	private double answer_a = 0.0;
 	
 	double f(double x){
+		
+	}
+	
+	public void setAsnwer_a(double a){
+		
+	}
+	
+	public double getAnswer_a(){
 	
 	}
 }
@@ -42,15 +47,32 @@ class Function_a extends AbstractDrawFunction{
 class Function_b extends AbstractDrawFunction{
 	private double answer_b = 0.0;
 	
-	double f(double x){
+	public double f(double x){
 	
 	}
+	
+	public void setAsnwer_b(double b){
+		
+	}
+	
+	public double getAnswer_b(){
+	
+	}
+	
 }
 
 class Function_c extends AbstractDrawFunction{
 	private double answer_c = 0.0;
 	
 	double f(double x){
+	
+	}
+	
+	public void setAsnwer_c(double c){
+		
+	}
+	
+	public double getAnswer_c(){
 	
 	}
 }
@@ -61,12 +83,28 @@ class Function_d extends AbstractDrawFunction{
 	double f(double x){
 	
 	}
+	
+	public void setAsnwer_d(double d){
+		
+	}
+	
+	public double getAnswer_d(){
+	
+	}
 }
 
 class Function_e extends AbstractDrawFunction{
 	private double answer_e = 0.0;
 	
 	double f(double x){
+	
+	}
+	
+	public void setAsnwer_e(double e){
+		
+	}
+	
+	public double getAnswer_e(){
 	
 	}
 }
@@ -77,12 +115,28 @@ class Function_f extends AbstractDrawFunction{
 	double f(double x){
 	
 	}
+	
+	public void setAsnwer_f(double f){
+		
+	}
+	
+	public double getAnswer_f(){
+	
+	}
 }
 
 class Function_g extends AbstractDrawFunction{
 	private double answer_g = 0.0;
 	
 	double f(double x){
+	
+	}
+	
+	public void setAsnwer_g(double g){
+		
+	}
+	
+	public double getAnswer_g(){
 	
 	}
 }
