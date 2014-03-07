@@ -136,7 +136,7 @@ class Function_g extends AbstractDrawFunction{
 	}
 	
 	public void setAsnwer_g(double g){
-		answer_g = g;
+		 answer_g = g;
 	}
 	
 	public double getAnswer_g(){
