@@ -1,3 +1,4 @@
+import java.util.*;
 import java.swing.jPanel;
 
 public class FunctionAnswer{
