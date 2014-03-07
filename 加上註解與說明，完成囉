@@ -1,0 +1,238 @@
+/**
+ * ID : U10216012
+ * Name : Alan Lee
+ * Ex: 15.1
+ * Information: By enter an number, user can get the answer of the functions of 15.1
+ *				The functions of 15.1:
+ *		 						a. f(x) = x * x 
+ *								b. f(x) = sin(x)
+ *		 						c. f(x) = cos(x) 
+ *		 						d. f(x) = tan(x)
+ *								e. f(x) = cos(x) + 5sin(x) 
+ *								f. f(x) = 5cos(x) + sin(x) 
+ *								g. f(x) = log(x) + x * x 
+ *		
+*/
+
+
+import java.util.*;
+import javax.swing.JPanel;
+
+public class FunctionAnswer{
+	/**Main method*/
+	public static void main(String[] args){
+		
+		// Create the objects of functions
+		Function_a a = new Function_a();
+		Function_b b = new Function_b();
+		Function_c c = new Function_c();
+		Function_d d = new Function_d();
+		Function_e e = new Function_e();
+		Function_f f = new Function_f();
+		Function_g g = new Function_g();
+		
+		//Show the functions to user
+		System.out.println(" ------ "+ " The functions of 15.1 " +" ------ ");
+		System.out.println("\t" + " a. f(x) = x * x " + "\t");
+		System.out.println("\t" + " b. f(x) = sin(x) " + "\t");
+		System.out.println("\t" + " c. f(x) = cos(x) " + "\t");
+		System.out.println("\t" + " d. f(x) = tan(x) " + "\t");
+		System.out.println("\t" + " e. f(x) = cos(x) + 5sin(x) " + "\t");
+		System.out.println("\t" + " f. f(x) = 5cos(x) + sin(x) " + "\t");
+		System.out.println("\t" + " g. f(x) = log(x) + x * x " + "\t");
+		System.out.println(" -----"+ "---------------------" +"----------- \n" );
+		
+		//Remind user to enter an number, and talk user what the next step of program.
+		System.out.println(" Please enter the number and it will be taken into");
+		System.out.print(" the functions, and show their answers: ");
+		
+		// Create a Scanner and save the number which user entering.
+		Scanner input = new Scanner(System.in);
+		double number = input.nextDouble();
+		
+		// Show the answers of functions
+		System.out.println(" ------ "+ " The answers of  functions " +" ------ ");
+		System.out.println("\t" + " a. x*x = " + a.f(number) + "\t" );
+		System.out.println("\t" + " b. sin(x) = " + b.f(number) + "\t" );
+		System.out.println("\t" + " c. cos(x) = " + c.f(number) + "\t");
+		System.out.println("\t" + " d. tan(x) = " + d.f(number) + "\t");
+		System.out.println("\t" + " e. cos(x) + 5sin(x) = " + e.f(number) + "\t");
+		System.out.println("\t" + " f. 5cos(x) + sin(x) = " + f.f(number) + "\t");
+		System.out.println("\t" + " g. log(x) + x*x = " + g.f(number) + "\t");
+		System.out.println(" -----"+ "---------------------" +"----------------- " );
+
+		
+		
+	}
+}
+
+/***/
+abstract class AbstractDrawFunction extends JPanel{
+	
+	protected AbstractDrawFunction(){};
+
+	
+	abstract double f(double x);
+}
+
+/**the first function class*/
+class Function_a extends AbstractDrawFunction{
+	private double answer_a = 0.0;
+	
+	Function_a(){};
+	
+	//the computing method of the first function
+	double f(double x){
+		answer_a = x * x;
+		return answer_a;
+	}
+	
+	// Set the new answer to the first function
+	public void setAsnwer_a(double a){
+		answer_a = a;
+	}
+	
+	// get the answer of the first function
+	public double getAnswer_a(){
+		return answer_a;
+	}
+}
+
+/**the second function class*/
+class Function_b extends AbstractDrawFunction{
+	private double answer_b = 0.0;
+	
+	Function_b(){};
+	
+	//the computing method of the second function
+	public double f(double x){
+		answer_b = Math.sin(x);
+		return answer_b;
+	}
+	
+	// Set the new answer to the second function
+	public void setAsnwer_b(double b){
+		answer_b = b;
+	}
+	
+	// get the answer of the second function
+	public double getAnswer_b(){
+		return answer_b;
+	}
+	
+}
+
+/**the third function class*/
+class Function_c extends AbstractDrawFunction{
+	private double answer_c = 0.0;
+	
+	Function_c(){};
+	
+	//the computing method of the third function
+	double f(double x){
+		answer_c = Math.cos(x);
+		return answer_c;
+	}
+	
+	// Set the new answer to the third function
+	public void setAsnwer_c(double c){
+		answer_c = c;
+	}
+	
+	// get the answer of the third function
+	public double getAnswer_c(){
+		return answer_c;
+	}
+}
+
+/**the forth function class*/
+class Function_d extends AbstractDrawFunction{
+	private double answer_d = 0.0;
+	
+	Function_d(){};
+	
+	//the computing method of the forth function
+	double f(double x){
+		answer_d = Math.tan(x);
+		return answer_d;
+	}
+	
+	// Set the new answer to the forth function
+	public void setAsnwer_d(double d){
+		answer_d = d;
+	}
+	
+	// get the answer of the forth function
+	public double getAnswer_d(){
+		return answer_d;
+	}
+}
+
+/**the fifth function class*/
+class Function_e extends AbstractDrawFunction{
+	private double answer_e = 0.0;
+	
+	Function_e(){};
+	
+	//the computing method of the fifth function
+	double f(double x){
+		answer_e = Math.cos(x) + 5 * (Math.sin(x));
+		return answer_e;
+	}
+	
+	// Set the new answer to the fifth function
+	public void setAsnwer_e(double e){
+		answer_e = e;
+	}
+	
+	// get the answer of the fifth function
+	public double getAnswer_e(){
+		return answer_e;
+	}
+}
+
+/**the sixth function class*/
+class Function_f extends AbstractDrawFunction{
+	private double answer_f = 0.0;
+	
+	Function_f(){};
+	
+	//the computing method of the sixth function
+	double f(double x){
+		answer_f = 5 *(Math.cos(x)) + Math.sin(x);
+		return answer_f;
+	}
+	
+	// Set the new answer to the sixth function
+	public void setAsnwer_f(double f){
+		answer_f = f;
+	}
+	
+	// get the answer of the sixth function
+	public double getAnswer_f(){
+		return answer_f;
+	}
+}
+
+/**the seventh function class*/
+class Function_g extends AbstractDrawFunction{
+	private double answer_g = 0.0;
+	
+	Function_g(){};
+	
+	//the computing method of the seventh function
+	double f(double x){
+		answer_g = (x * x) +  Math.log10(x) ;
+		return answer_g;
+	}
+	
+	// Set the new answer to the seventh function
+	public void setAsnwer_g(double g){
+		answer_g = g;
+	}
+	
+	// get the answer of the seventh function
+	public double getAnswer_g(){
+		return answer_g;
+	}
+}
