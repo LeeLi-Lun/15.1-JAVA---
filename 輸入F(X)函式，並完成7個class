@@ -34,6 +34,8 @@ abstract class AbstractDrawFunction extends jPanel{
 class Function_a extends AbstractDrawFunction{
 	private double answer_a = 0.0;
 	
+	Function_a(){};
+	
 	double f(double x){
 		answer_a = x * x;
 	}
@@ -49,6 +51,8 @@ class Function_a extends AbstractDrawFunction{
 
 class Function_b extends AbstractDrawFunction{
 	private double answer_b = 0.0;
+	
+	Function_b(){};
 	
 	public double f(double x){
 		answer_b = math.sin(x);
@@ -67,6 +71,8 @@ class Function_b extends AbstractDrawFunction{
 class Function_c extends AbstractDrawFunction{
 	private double answer_c = 0.0;
 	
+	Function_c(){};
+	
 	double f(double x){
 		answer_c = math.cos(x);
 	}
@@ -82,6 +88,8 @@ class Function_c extends AbstractDrawFunction{
 
 class Function_d extends AbstractDrawFunction{
 	private double answer_d = 0.0;
+	
+	Function_d(){};
 	
 	double f(double x){
 		answer_d = math.tan(x);
@@ -99,6 +107,8 @@ class Function_d extends AbstractDrawFunction{
 class Function_e extends AbstractDrawFunction{
 	private double answer_e = 0.0;
 	
+	Function_e(){};
+	
 	double f(double x){
 		answer_e = math.cos(x) + 5 * (math.sin(x));
 	}
@@ -114,6 +124,8 @@ class Function_e extends AbstractDrawFunction{
 
 class Function_f extends AbstractDrawFunction{
 	private double answer_f = 0.0;
+	
+	Function_f(){};
 	
 	double f(double x){
 		answer_f = 5 *(math.cos(x)) + math.sin(x);
@@ -131,12 +143,14 @@ class Function_f extends AbstractDrawFunction{
 class Function_g extends AbstractDrawFunction{
 	private double answer_g = 0.0;
 	
+	Function_g(){};
+	
 	double f(double x){
 		answer_g = (x * x) + math.log10(x);
 	}
 	
 	public void setAsnwer_g(double g){
-		 answer_g = g;
+		answer_g = g;
 	}
 	
 	public double getAnswer_g(){
