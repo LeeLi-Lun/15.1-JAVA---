@@ -12,7 +12,7 @@ public class FunctionAnswer{
 		Function_g g = new Function_g();
 		
 		Scanner input = new Scanner(System.in);
-		
+		double nubmer = input.nextDouble();
 		
 		
 	}
