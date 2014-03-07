@@ -32,7 +32,7 @@ abstract class AbstractDrawFunction extends jPanel{
 }
 
 class Function_a extends AbstractDrawFunction{
-	private double answer_a = 0;
+	private double answer_a = 0.0;
 	
 	double f(double x){
 	
@@ -40,7 +40,7 @@ class Function_a extends AbstractDrawFunction{
 }
 
 class Function_b extends AbstractDrawFunction{
-	private double answer_b = 0;
+	private double answer_b = 0.0;
 	
 	double f(double x){
 	
@@ -48,7 +48,7 @@ class Function_b extends AbstractDrawFunction{
 }
 
 class Function_c extends AbstractDrawFunction{
-	private double answer_c = 0;
+	private double answer_c = 0.0;
 	
 	double f(double x){
 	
@@ -56,7 +56,7 @@ class Function_c extends AbstractDrawFunction{
 }
 
 class Function_d extends AbstractDrawFunction{
-	private double answer_d = 0;
+	private double answer_d = 0.0;
 	
 	double f(double x){
 	
@@ -64,7 +64,7 @@ class Function_d extends AbstractDrawFunction{
 }
 
 class Function_e extends AbstractDrawFunction{
-	private double answer_e = 0;
+	private double answer_e = 0.0;
 	
 	double f(double x){
 	
@@ -72,7 +72,7 @@ class Function_e extends AbstractDrawFunction{
 }
 
 class Function_f extends AbstractDrawFunction{
-	private double answer_f = 0;
+	private double answer_f = 0.0;
 	
 	double f(double x){
 	
@@ -80,7 +80,7 @@ class Function_f extends AbstractDrawFunction{
 }
 
 class Function_g extends AbstractDrawFunction{
-	private double answer_g = 0;
+	private double answer_g = 0.0;
 	
 	double f(double x){
 	
