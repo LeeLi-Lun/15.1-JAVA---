@@ -10,29 +10,29 @@ abstract class AbstractDrawFunction extends jPanel{
 
 }
 class Function_a extends AbstractDrawFunction{
-	double answer_a = 0;
+
 }
 
 class Function_b extends AbstractDrawFunction{
-	double answer_b = 0;
+
 }
 
 class Function_c extends AbstractDrawFunction{
-	double answer_c = 0;
+
 }
 
 class Function_d extends AbstractDrawFunction{
-	double answer_d = 0;
+	
 }
 
 class Function_e extends AbstractDrawFunction{
-	double answer_e = 0;
+
 }
 
 class Function_f extends AbstractDrawFunction{
-	double answer_f = 0;
+
 }
 
 class Function_g extends AbstractDrawFunction{
-	double answer_g = 0;
+	
 }
