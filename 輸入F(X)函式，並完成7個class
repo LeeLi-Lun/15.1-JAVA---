@@ -1,5 +1,5 @@
 import java.util.*;
-import javax.swing.jPanel;
+import javax.swing.JPanel;
 
 public class FunctionAnswer{
 	public static void main(String[] args){
