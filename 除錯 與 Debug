@@ -1,0 +1,186 @@
+import java.util.*;
+import javax.swing.JPanel;
+
+public class FunctionAnswer{
+	public static void main(String[] args){
+		
+		Function_a a = new Function_a();
+		Function_b b = new Function_b();
+		Function_c c = new Function_c();
+		Function_d d = new Function_d();
+		Function_e e = new Function_e();
+		Function_f f = new Function_f();
+		Function_g g = new Function_g();
+		
+		System.out.println(" ------ "+ " The functions of 15.1 " +" ------ ");
+		System.out.println("\t" + " a. f(x) = x * x " + "\t");
+		System.out.println("\t" + " b. f(x) = sin(x) " + "\t");
+		System.out.println("\t" + " c. f(x) = cos(x) " + "\t");
+		System.out.println("\t" + " d. f(x) = tan(x) " + "\t");
+		System.out.println("\t" + " e. f(x) = cos(x) + 5sin(x) " + "\t");
+		System.out.println("\t" + " f. f(x) = 5cos(x) + sin(x) " + "\t");
+		System.out.println("\t" + " g. f(x) = log(x) + x * x " + "\t");
+		System.out.println(" -----"+ "---------------------" +"----------- \n" );
+		
+		System.out.println(" Please enter the number and it will be taken into");
+		System.out.print(" the functions, and show their answers: ");
+		
+		Scanner input = new Scanner(System.in);
+		double number = input.nextDouble();
+		
+		System.out.println(" ------ "+ " The answers of  functions " +" ------ ");
+		System.out.println("\t" + " a. x*x = " + a.f(number) + "\t" );
+		System.out.println("\t" + " b. sin(x) = " + b.f(number) + "\t" );
+		System.out.println("\t" + " c. cos(x) = " + c.f(number) + "\t");
+		System.out.println("\t" + " d. tan(x) = " + d.f(number) + "\t");
+		System.out.println("\t" + " e. cos(x) + 5sin(x) = " + e.f(number) + "\t");
+		System.out.println("\t" + " f. 5cos(x) + sin(x) = " + f.f(number) + "\t");
+		System.out.println("\t" + " g. log(x) + x*x = " + g.f(number) + "\t");
+		System.out.println(" -----"+ "---------------------" +"----------------- " );
+
+		
+		
+	}
+}
+
+abstract class AbstractDrawFunction extends JPanel{
+	
+	protected AbstractDrawFunction(){};
+
+	/** Return the y-coordinate*/
+	abstract double f(double x);
+}
+
+class Function_a extends AbstractDrawFunction{
+	private double answer_a = 0.0;
+	
+	Function_a(){};
+	
+	double f(double x){
+		answer_a = x * x;
+		return answer_a;
+	}
+	
+	public void setAsnwer_a(double a){
+		answer_a = a;
+	}
+	
+	public double getAnswer_a(){
+		return answer_a;
+	}
+}
+
+class Function_b extends AbstractDrawFunction{
+	private double answer_b = 0.0;
+	
+	Function_b(){};
+	
+	public double f(double x){
+		answer_b = Math.sin(x);
+		return answer_b;
+	}
+	
+	public void setAsnwer_b(double b){
+		answer_b = b;
+	}
+	
+	public double getAnswer_b(){
+		return answer_b;
+	}
+	
+}
+
+class Function_c extends AbstractDrawFunction{
+	private double answer_c = 0.0;
+	
+	Function_c(){};
+	
+	double f(double x){
+		answer_c = Math.cos(x);
+		return answer_c;
+	}
+	
+	public void setAsnwer_c(double c){
+		answer_c = c;
+	}
+	
+	public double getAnswer_c(){
+		return answer_c;
+	}
+}
+
+class Function_d extends AbstractDrawFunction{
+	private double answer_d = 0.0;
+	
+	Function_d(){};
+	
+	double f(double x){
+		answer_d = Math.tan(x);
+		return answer_d;
+	}
+	
+	public void setAsnwer_d(double d){
+		answer_d = d;
+	}
+	
+	public double getAnswer_d(){
+		return answer_d;
+	}
+}
+
+class Function_e extends AbstractDrawFunction{
+	private double answer_e = 0.0;
+	
+	Function_e(){};
+	
+	double f(double x){
+		answer_e = Math.cos(x) + 5 * (Math.sin(x));
+		return answer_e;
+	}
+	
+	public void setAsnwer_e(double e){
+		answer_e = e;
+	}
+	
+	public double getAnswer_e(){
+		return answer_e;
+	}
+}
+
+class Function_f extends AbstractDrawFunction{
+	private double answer_f = 0.0;
+	
+	Function_f(){};
+	
+	double f(double x){
+		answer_f = 5 *(Math.cos(x)) + Math.sin(x);
+		return answer_f;
+	}
+	
+	public void setAsnwer_f(double f){
+		answer_f = f;
+	}
+	
+	public double getAnswer_f(){
+		return answer_f;
+	}
+}
+
+class Function_g extends AbstractDrawFunction{
+	private double answer_g = 0.0;
+	
+	Function_g(){};
+	
+	double f(double x){
+		answer_g = (x * x) +  Math.log10(x) ;
+		return answer_g;
+	}
+	
+	public void setAsnwer_g(double g){
+		answer_g = g;
+	}
+	
+	public double getAnswer_g(){
+		return answer_g;
+	}
+}
